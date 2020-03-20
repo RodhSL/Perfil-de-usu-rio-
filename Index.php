@@ -1,3 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8"/>
+        <style type="text/css">
+
+            #imagem{
+                float: left;
+            }
+
+            body{
+                background-color: #e8eaf6;
+
+            }
+        </style>
+    </head>
+
+<body>
 <?php
 
     $dados_pessoais = array(
@@ -22,13 +41,16 @@
 
     );
 
-    echo ('<img src=' . $dados_pessoais['img'] . '>');
+    echo ('<img src=' . $dados_pessoais['img'] . ' id="imagem">');
+    echo ('<br>');
     echo ('<h4>Nome:</h4>' . $dados_pessoais['Nome']);
     echo ('<h4>Apelido:</h4>' . $dados_pessoais['Apelido']);
 
     echo ('<br>');
+    echo ('<br>');
 
-    echo ('<h3>Endereço:</h3>');
+
+    echo ('<h4>Endereço:</h4>');
     echo ('Rua: ' . $dados_locais['Rua']);
     echo ('<br>');
     echo ('N° da casa: ' . $dados_locais['N°_da_casa']);
@@ -40,11 +62,13 @@
     echo ('<br>');
     echo ('<br>');
 
+    echo('<h4>Dados:</h4>');
     echo ('E-mail: ' . $dado_escolares['Email']);
     echo ('<br>');
     echo ('Curso: ' . $dado_escolares['Curso']);
     echo ('<br>');
-    echo ('Disciplinas: ' . $dado_escolares['Disciplinas'][0]);
+    echo ('<h4>Disciplinas</h4>');
+    echo ($dado_escolares['Disciplinas'][0]);
     echo ('<br>');
     echo ($dado_escolares['Disciplinas'][1]);
     echo ('<br>');
@@ -53,3 +77,5 @@
     echo ($dado_escolares['Disciplinas'][3]);
 
 ?>
+</body>
+</html>
