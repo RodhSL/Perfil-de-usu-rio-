@@ -2,8 +2,8 @@
 
     $dados_pessoais = array(
         'img' => 'https://i.pinimg.com/236x/17/37/90/173790415cff34d3f515ccb9d936d64a.jpg',
-        'Nome' => 'Rodrigo Santana Lima',
-        'Apelido' => 'Rod',
+        'Nome' => '<h3>Rodrigo S. Lima</h3>',
+        'Apelido' => '<h3>Rod</h3>',
 
     );
 
@@ -11,28 +11,24 @@
         'Rua' => 'Rua D',
         'N°_da_casa' => '320',
         'Bairro' => 'Bonfim',
-        'Cidade' => 'PMA',
+        'Cidade' => 'Palmas de M. Alto',
 
     );
 
     $dado_escolares = array(
         'Email' => 'digocnn84@Gmail.com',
         'Curso' => 'Informática',
-        'Disciplinas' => array('webdesing', 'Banco de Dados', 'Projeto Integrador', 'Análise de Sistemas'),
+        'Disciplinas' => array('Webdesing', 'Banco de Dados', 'Projeto Integrador', 'Análise de Sistemas'),
 
     );
 
     echo ('<img src=' . $dados_pessoais['img'] . '>');
-    echo ($dados_pessoais['Nome']);
-    echo ('<br>');
-    echo ($dados_pessoais['Apelido']);
+    echo ('<h4>Nome:</h4>' . $dados_pessoais['Nome']);
+    echo ('<h4>Apelido:</h4>' . $dados_pessoais['Apelido']);
 
-    echo ('<br>'); 
     echo ('<br>');
 
-    echo ('ENDEREÇO:');
-    echo ('<br>');
-    echo ('<br>');
+    echo ('<h3>Endereço:</h3>');
     echo ('Rua: ' . $dados_locais['Rua']);
     echo ('<br>');
     echo ('N° da casa: ' . $dados_locais['N°_da_casa']);
